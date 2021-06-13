@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <title>blog management</title>
+        <script type="text/javascript">
+
+        blogTitle_array = [];
+        blogDescription_array = [];
+
+        //saves input records in array//
+        function addRecord() {
+          var user_input1 = document.getElementById('title');
+          var user_input2 = document.getElementById('description');
+          blogTitle_array.push(user_input1.value);
+          blogDescription_array.push(user_input2.value);
+          user_input1.value = "";
+          user_input2.value = "";  
+        }
+        
+        //displays input records//
+        function displayRecord() {
+          document.getElementById("admin_inputs1").innerHTML = blogTitle_array.join(" Title: ");
+          document.getElementById("admin_inputs2").innerHTML = blogDescription_array.join(" Description: ");
+        }
+
+        </script>
+      </head>
+
+<body>
+    <h2 class="headings" align="center">Manage Blog</h2>
+    <!-- manage blog form -->
+    <form class="form1">
+      <label class="text-style" for="title" >Blog Title:</label><br>
+      <input class="text-style" type="text" id="title" name="title" ><br>
+      <label class="text-style" for="description" >Blog Description:</label><br>
+      <input class="text-style" type="text" id="description" name="description" ><br><br>
+      <button onclick="addRecord()" type="button" class="button1" >Save Post</button><br><br>
+      <button onclick="displayRecord()" type="button" class="button2">Display Post</button>
+    </form> 
+    <!-- display admin inputs in the same page -->
+    <div id="admin_inputs1"></div><br><br>
+    <div id="admin_inputs2"></div>
+    
+  
+</body>
+</html>

@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  
+  /* top navigation bar style */
+  .topnav {
+    overflow: hidden;
+    background-color: #F3EBF6;
+  }
+  
+  /* top navigation bar links style*/
+  .topnav a {
+    float: left;
+    display: block;
+    color: #8C55AA;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #8C55AA;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgb(38, 50, 56);
+  }
+  
+  /* image style */
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  
+  /* footer style */
+  .footer {
+    background-color: #F3EBF6;
+    padding: 120px;
+    color: #8C55AA;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+  }
